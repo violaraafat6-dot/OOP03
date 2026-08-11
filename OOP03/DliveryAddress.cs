@@ -4,26 +4,26 @@ using System.Text;
 
 #region deliveryaddress
 
-namespace OOP03
-{
-    public struct DeliveryAddress
-    {
-        public string City;
-        public string Street;
-        public int BuildingNumber;
+//namespace OOP03
+//{
+//    public struct DeliveryAddress
+//    {
+//        public string City;
+//        public string Street;
+//        public int BuildingNumber;
 
-        public DeliveryAddress(string city, string street, int buildingNumber)
-        {
-            City = city;
-            Street = street;
-            BuildingNumber = buildingNumber;
-        }
+//        public DeliveryAddress(string city, string street, int buildingNumber)
+//        {
+//            City = city;
+//            Street = street;
+//            BuildingNumber = buildingNumber;
+//        }
 
-        public string GetFullAddress()
-        {
-            return $"{BuildingNumber} {Street}, {City}";
-        }
-    }
-}
+//        public string GetFullAddress()
+//        {
+//            return $"{BuildingNumber} {Street}, {City}";
+//        }
+//    }
+//}
 
 #endregion
