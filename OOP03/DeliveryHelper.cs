@@ -3,17 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-#region
+#region deliveryhelper
 
-namespace OOP03
-{
-    public static class DeliveryHelper
-    {
-        public static void PrintShipmentDetails(Shipment shipment)
-        {
-            shipment.PrintShipment();
-        }
-    }
-}
+//namespace OOP03
+//{
+//    public static class DeliveryHelper
+//    {
+//        public static void PrintShipmentDetails(Shipment shipment)
+//        {
+//            shipment.PrintShipment();
+//        }
+//    }
+//}
 
 #endregion
