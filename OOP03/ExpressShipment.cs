@@ -9,7 +9,17 @@ namespace OOP03
 {
     public class ExpressShipment : Shipment
     {
-        public decimal ExtraFee { get; set; }
+        private decimal extraFee;
+
+        public decimal ExtraFee
+        {
+            get { return extraFee; }
+            set
+            {
+                if (value >= 0)
+                    extraFee = value;
+            }
+        }
 
         public override decimal EstimatedCost
         {

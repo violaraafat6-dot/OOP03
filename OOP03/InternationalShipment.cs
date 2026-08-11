@@ -9,9 +9,28 @@ namespace OOP03
 {
     public class InternationalShipment : Shipment
     {
-        public string DestinationCountry { get; set; }
+        private string destinationCountry;
 
-        public decimal CustomsFee { get; set; }
+        public string DestinationCountry
+        {
+            get { return destinationCountry; }
+            set
+            {
+                if (!string.IsNullOrWhiteSpace(value))
+                    destinationCountry = value;
+            }
+        }
+        private decimal customsFee;
+
+        public decimal CustomsFee
+        {
+            get { return customsFee; }
+            set
+            {
+                if (value >= 0)
+                    customsFee = value;
+            }
+        }
 
         public override decimal EstimatedCost
         {
